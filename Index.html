@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Pavithra 🎉</title>
+
+<style>
+  body {
+    background: #0b0b1a;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+  }
+
+  h1 {
+    color: #ffccff;
+    margin-bottom: 20px;
+  }
+
+  .art {
+    white-space: pre;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .fireworks {
+    color: #ffd700;
+    margin-top: 20px;
+  }
+
+  .footer {
+    margin-top: 30px;
+    color: #ff99cc;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>🎉 Happy Birthday Pavithra 🎉</h1>
+
+<div id="cake" class="art"></div>
+<div id="fireworks" class="art fireworks"></div>
+
+<div class="footer">
+  ✨ Wishing you happiness, success & smiles ✨
+</div>
+
+<script>
+const cakeOn = `
+            ^   ^   ^   ^   ^
+            |   |   |   |   |
+      =============================
+     |                              |
+     |        HAPPY BIRTHDAY        |
+     |            PAVITHRA          |
+     |                              |
+  =====================================
+ |                                      |
+ |        Wishing you happiness!        |
+ |                                      |
+==========================================
+`;
+
+const cakeOff = `
+            |   |   |   |   |
+      =============================
+     |                              |
+     |        HAPPY BIRTHDAY        |
+     |            PAVITHRA          |
+     |                              |
+  =====================================
+ |                                      |
+ |        Wishing you happiness!        |
+ |                                      |
+==========================================
+`;
+
+const fireworks = `
+        *     *       *     *
+     *     *     *       *     *
+        \\   |   /    \\   |   /
+      ----  *  ----  ----  *  ----
+        /   |   \\    /   |   \\
+     *     *     *       *     *
+        *     *       *     *
+`;
+
+let flame = true;
+
+setInterval(() => {
+  document.getElementById("cake").textContent =
+    flame ? cakeOn : cakeOff;
+
+  document.getElementById("fireworks").textContent = fireworks;
+
+  flame = !flame;
+}, 800);
+</script>
+
+</body>
+</html>8
